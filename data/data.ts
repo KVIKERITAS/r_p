@@ -1,0 +1,32 @@
+export const steps = [
+	{
+		id: '1',
+		title: 'INVITE FRIENDS',
+		text: 'Refer friends with your unique referral link.',
+		img: '/invite.svg',
+		imgHeight: 140,
+		imgWidth: 128,
+		imgPosition: 'left',
+		imgAlt: 'invite',
+	},
+	{
+		id: '2',
+		title: 'COLLECT COINS',
+		text: 'Get 1 coin for each friend that installs our extension using your referral link.',
+		img: '/collect-coins.svg',
+		imgHeight: 144,
+		imgWidth: 144,
+		imgPosition: 'right',
+		imgAlt: 'collect-coins',
+	},
+	{
+		id: '3',
+		title: 'GET VOUCHER',
+		text: 'Redeem for a $20 hotel booking voucher once you collect 20 coins.',
+		img: '/voucher.svg',
+		imgHeight: 91,
+		imgWidth: 128,
+		imgPosition: 'left',
+		imgAlt: 'voucher',
+	},
+] as const

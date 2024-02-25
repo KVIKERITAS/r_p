@@ -1,0 +1,23 @@
+@import '/app/colors.module';
+
+.singleSocial {
+	padding: 14px 24px 14px 24px;
+	border: 1px solid $color-border-gray;
+	border-radius: 16px;
+	width: 312px;
+	display: flex;
+	align-items: flex-end;
+}
+
+.socialText {
+	margin-left: 20px;
+
+	span {
+		font-size: 16px;
+	}
+
+	p {
+		font-size: 20px;
+		font-weight: bold;
+	}
+}

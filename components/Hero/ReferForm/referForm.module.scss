@@ -1,0 +1,28 @@
+$color-bg-primary: #f8cc5d;
+$color-bg-secondary: #f8f4f9;
+$color-bg-white: #ffffff;
+$color-bg-blue: #4eb3e3;
+$refer-border: 1px solid #1f343e;
+$color-text-primary: #1f343e;
+$color-text-blue: #4eb3e3;
+
+.refer {
+	width: 544px;
+	background-color: $color-bg-secondary;
+	color: $color-text-primary;
+	border-radius: 16px;
+	border: $refer-border;
+	padding: 64px 64px 20px 64px;
+	height: 797px;
+
+	h1 {
+		font-size: 48px;
+		line-height: 72px;
+	}
+
+	p {
+		margin-top: 32px;
+		font-size: 20px;
+		line-height: 32px;
+	}
+}
