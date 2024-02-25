@@ -11,9 +11,15 @@ export const Navbar = () => {
 			<header className={styles.navbar}>
 				<Image src='/logo.svg' alt='logo' width={125} height={32} />
 				<nav>
-					<Link href='/'>Chrome Extension</Link>
-					<Link href='/'>Price Comparison</Link>
-					<Link href='/'>Blog</Link>
+					<Link href='/' className={notoSans.className}>
+						Chrome Extension
+					</Link>
+					<Link href='/' className={notoSans.className}>
+						Price Comparison
+					</Link>
+					<Link href='/' className={notoSans.className}>
+						Blog
+					</Link>
 				</nav>
 			</header>
 		</div>

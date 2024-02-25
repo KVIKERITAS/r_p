@@ -1,7 +1,6 @@
-import { steps } from '@/data/data'
 import { Caveat_Brush, Noto_Sans } from 'next/font/google'
 import { ReferForm } from './ReferForm/ReferForm'
-import { SingleStep } from './SingleStep/SingleStep'
+import { Steps } from './Steps/Steps'
 import styles from './hero.module.scss'
 
 const caveatBrush = Caveat_Brush({
@@ -17,21 +16,7 @@ export const Hero = () => {
 		<div className={styles.wrapper}>
 			<main className={styles.hero}>
 				<ReferForm />
-				{/* <div className={styles.steps}>
-					{steps.map(step => (
-						<SingleStep
-							key={step.id}
-							imgSrc={step.img}
-							imgAlt={step.imgAlt}
-							imgHeight={step.imgHeight}
-							imgWidth={step.imgWidth}
-							imgPosition={step.imgPosition}
-							step={step.id}
-							title={step.title}
-							text={step.text}
-						/>
-					))}
-				</div> */}
+				<Steps />
 			</main>
 		</div>
 	)

@@ -1,0 +1,35 @@
+@import '/app/colors.module';
+
+.steps {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 64px;
+	margin-top: 64px;
+
+	.singleStep {
+		display: flex;
+		align-items: center;
+		gap: 56px;
+
+		.stepInfo {
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+			color: $color-text-dark-gray;
+
+			h2 {
+				font-size: 32px;
+			}
+
+			h3 {
+				color: $color-text-cyan;
+				font-weight: bold;
+			}
+
+			p {
+				font-size: 20px;
+			}
+		}
+	}
+}

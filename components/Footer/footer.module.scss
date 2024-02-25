@@ -40,15 +40,20 @@
 				flex: 1;
 				display: flex;
 				flex-direction: column;
-				justify-content: space-between;
 
 				.footerContact {
+					flex: 1;
+
 					.footerEmail {
 						display: flex;
 						gap: 16px;
 						align-items: center;
 						margin-top: 24px;
 					}
+				}
+
+				.footerSocial {
+					flex: 1;
 				}
 			}
 		}
