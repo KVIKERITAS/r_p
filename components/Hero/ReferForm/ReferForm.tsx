@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Caveat_Brush, Noto_Sans } from 'next/font/google'
+import Image from 'next/image'
 import styles from './referForm.module.scss'
 
 const caveatBrush = Caveat_Brush({
@@ -19,11 +20,21 @@ export const ReferForm = () => {
 				1 coin for each friend that installs our extension. Minimum cash-out at
 				20 coins.
 			</p>
-			<form>
+			<div className={styles.formGroup}>
 				<p>error</p>
-				<input type='text' placeholder='lalalal' />
-				<button type='submit'>Referal</button>
-			</form>
+				<form>
+					<input
+						type='text'
+						placeholder='Enter your email address'
+						className={notoSans.className}
+					/>
+					<button type='submit' className={notoSans.className}>
+						Get Referral Link
+					</button>
+					<Image src='email.svg' height={16} width={20} alt='email' />
+				</form>
+				<span>Limits on max rewards apply.</span>
+			</div>
 		</div>
 	)
 }

@@ -1,0 +1,15 @@
+@import '/app/mixins.module.scss';
+
+.mobileMenu {
+	display: none;
+
+	@include mobile() {
+		display: block;
+	}
+
+	button {
+		border: none;
+		background-color: transparent;
+		cursor: pointer;
+	}
+}

@@ -1,4 +1,5 @@
 @import '/app/colors.module';
+@import '/app/mixins.module.scss';
 
 .wrapper {
 	background-color: $color-bg-gray;
@@ -10,7 +11,14 @@
 		padding: 32px 0;
 		color: $color-white;
 		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
 		gap: 16px;
+
+		@include mobile() {
+			flex-direction: column;
+			align-items: center;
+		}
 
 		.singleSocial {
 			padding: 14px 24px 14px 24px;

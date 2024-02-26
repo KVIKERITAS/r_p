@@ -1,6 +1,7 @@
 import { Noto_Sans } from 'next/font/google'
 import Image from 'next/image'
 import Link from 'next/link'
+import { MobileMenu } from './MobileMenu/MobileMenu'
 import styles from './navbar.module.scss'
 
 const notoSans = Noto_Sans({ subsets: ['latin'] })
@@ -21,6 +22,8 @@ export const Navbar = () => {
 						Blog
 					</Link>
 				</nav>
+
+				<MobileMenu />
 			</header>
 		</div>
 	)

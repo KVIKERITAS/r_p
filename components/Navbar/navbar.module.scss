@@ -1,4 +1,5 @@
 @import '/app/colors.module';
+@import '/app/mixins.module.scss';
 
 .wrapper {
 	border: 1px solid $color-border-gray;
@@ -13,11 +14,19 @@
 	max-width: 1100px;
 	margin: 0 auto;
 
+	@include mobile() {
+		padding: 12px 16px;
+	}
+
 	nav {
 		display: flex;
 		justify-content: space-between;
 		gap: 40px;
 		margin: 0;
+
+		@include mobile() {
+			display: none;
+		}
 
 		img {
 			margin-left: 0;

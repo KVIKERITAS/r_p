@@ -1,11 +1,5 @@
 @import '/app/colors.module';
-
-$color-bg-secondary: #f8f4f9;
-$color-bg-white: #ffffff;
-$color-bg-blue: #4eb3e3;
-$refer-border: 1px solid #1f343e;
-$color-text-primary: #1f343e;
-$color-text-blue: #4eb3e3;
+@import '/app/mixins.module.scss';
 
 .wrapper {
 	background-color: $color-bg-yellow;
@@ -16,5 +10,12 @@ $color-text-blue: #4eb3e3;
 	padding: 64px 0;
 	margin: 0 auto;
 	display: flex;
+	flex-wrap: wrap;
 	gap: 128px;
+
+	@include mobile() {
+		flex-direction: column;
+		padding: 32px 16px;
+		gap: 50px;
+	}
 }

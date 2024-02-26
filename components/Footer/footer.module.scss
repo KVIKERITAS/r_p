@@ -1,16 +1,22 @@
 @import '/app/colors.module';
+@import '/app/mixins.module.scss';
 
 .wrapper {
 	background-color: $color-bg-white;
 
 	.footer {
-		width: 1100px;
+		max-width: 1100px;
 		margin: 0 auto;
 		color: $color-border-gray;
 		padding: 64px 0 58px 0;
 		display: flex;
-		justify-content: space-between;
+		flex-wrap: wrap;
 		gap: 128px;
+
+		@include mobile() {
+			padding: 48px 32px;
+			gap: 48px;
+		}
 
 		.about {
 			flex: 1;
@@ -22,6 +28,12 @@
 		.footerInfo {
 			flex: 1;
 			display: flex;
+			flex-wrap: wrap;
+
+			@include mobile() {
+				flex-direction: column;
+				gap: 32px;
+			}
 
 			.footerNav {
 				display: flex;
@@ -41,6 +53,10 @@
 				display: flex;
 				flex-direction: column;
 
+				@include mobile() {
+					gap: 32px;
+				}
+
 				.footerContact {
 					flex: 1;
 
@@ -54,6 +70,11 @@
 
 				.footerSocial {
 					flex: 1;
+
+					.socialIcons {
+						display: flex;
+						gap: 8px;
+					}
 				}
 			}
 		}

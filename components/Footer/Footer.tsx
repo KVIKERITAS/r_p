@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { SocialIcon } from './SocialIcon/SocialIcon'
 import styles from './footer.module.scss'
 
 export const Footer = () => {
@@ -40,6 +41,13 @@ export const Footer = () => {
 						</div>
 						<div className={styles.footerSocial}>
 							<h4>SOCIAL</h4>
+							<div className={styles.socialIcons}>
+								<SocialIcon img='/instagram.svg' imgAlt='instagram icon' />
+								<SocialIcon img='/facebook.svg' imgAlt='facebook icon' />
+								<SocialIcon img='/linkedin.svg' imgAlt='linkedin icon' />
+								<SocialIcon img='/twitter.svg' imgAlt='twitter icon' />
+								<SocialIcon img='/tiktok.svg' imgAlt='tiktok icon' />
+							</div>
 						</div>
 					</div>
 				</div>

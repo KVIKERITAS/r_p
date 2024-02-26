@@ -1,4 +1,5 @@
 import { SocialCard } from './SocialCard/SocialCard'
+import { SocialRating } from './SocialRating/SocialRating'
 import styles from './socials.module.scss'
 
 export const Socials = () => {
@@ -7,6 +8,7 @@ export const Socials = () => {
 			<div className={styles.socials}>
 				<SocialCard type='chrome' />
 				<SocialCard type='apple' />
+				<SocialRating />
 			</div>
 		</div>
 	)

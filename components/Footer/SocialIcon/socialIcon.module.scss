@@ -1,0 +1,11 @@
+@import '/app/colors.module';
+@import '/app/mixins.module.scss';
+
+.socialIcon {
+	margin-top: 32px;
+	background-color: $color-bg-cyan;
+	border: 1px solid $color-border-gray;
+	padding: 8px;
+	border-radius: 8px;
+	cursor: pointer;
+}

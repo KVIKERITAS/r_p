@@ -1,3 +1,6 @@
+@import '/app/colors.module.scss';
+@import '/app/mixins.module.scss';
+
 $color-bg-primary: #f8cc5d;
 $color-bg-secondary: #f8f4f9;
 $color-bg-white: #ffffff;
@@ -12,17 +15,80 @@ $color-text-blue: #4eb3e3;
 	color: $color-text-primary;
 	border-radius: 16px;
 	border: $refer-border;
-	padding: 64px 64px 20px 64px;
-	height: 797px;
+	padding: 64px;
+
+	@include mobile() {
+		padding: 32px 16px;
+	}
 
 	h1 {
 		font-size: 48px;
 		line-height: 72px;
+
+		@include mobile() {
+			font-size: 32px;
+			line-height: 48px;
+		}
 	}
 
 	p {
 		margin-top: 32px;
 		font-size: 20px;
 		line-height: 32px;
+
+		@include mobile() {
+			font-size: 16px;
+			margin-top: 24px;
+			line-height: 24px;
+		}
+	}
+
+	.formGroup {
+		display: flex;
+		flex-direction: column;
+
+		form {
+			position: relative;
+			input {
+				padding: 20px 20px 20px 60px;
+				border-radius: 8px;
+				background-color: $color-white;
+				border: 1px solid $color-border-gray;
+				width: 100%;
+
+				&::placeholder {
+					font-size: 16px;
+				}
+			}
+
+			img {
+				position: absolute;
+				top: 20px;
+				left: 20px;
+			}
+
+			button {
+				display: block;
+				width: 100%;
+				background-color: $color-bg-blue;
+				margin-top: 16px;
+				border: 1px solid $color-border-gray;
+				padding: 16px;
+				border-radius: 8px;
+				color: white;
+				font-size: 20px;
+				font-weight: bold;
+				cursor: pointer;
+			}
+		}
+
+		span {
+			margin-top: 153px;
+			color: $color-text-light-gray;
+
+			@include mobile() {
+				margin-top: 70px;
+			}
+		}
 	}
 }
