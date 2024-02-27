@@ -1,0 +1,41 @@
+@import '/app/colors.module.scss';
+@import '/app/mixins.module.scss';
+
+.referralInput {
+	display: flex;
+
+	@include mobile() {
+		flex-direction: column;
+	}
+	input {
+		display: block;
+		width: 100%;
+		margin-top: 16px;
+		border: 1px solid $color-border-gray;
+		padding: 16px;
+		border-radius: 8px 0 0 8px;
+		color: white;
+		font-size: 20px;
+		cursor: pointer;
+
+		@include mobile() {
+			border-radius: 8px;
+		}
+	}
+
+	button {
+		background-color: $color-bg-cyan;
+		margin-top: 16px;
+		border: 1px solid $color-border-gray;
+		padding: 16px;
+		border-radius: 0 8px 8px 0;
+		color: white;
+		font-size: 20px;
+		font-weight: bold;
+		cursor: pointer;
+
+		@include mobile() {
+			border-radius: 8px;
+		}
+	}
+}

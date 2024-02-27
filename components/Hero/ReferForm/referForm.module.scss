@@ -1,20 +1,12 @@
 @import '/app/colors.module.scss';
 @import '/app/mixins.module.scss';
 
-$color-bg-primary: #f8cc5d;
-$color-bg-secondary: #f8f4f9;
-$color-bg-white: #ffffff;
-$color-bg-blue: #4eb3e3;
-$refer-border: 1px solid #1f343e;
-$color-text-primary: #1f343e;
-$color-text-blue: #4eb3e3;
-
 .refer {
 	flex: 1;
-	background-color: $color-bg-secondary;
-	color: $color-text-primary;
+	background-color: $color-bg-white;
+	color: $color-text-dark-gray;
 	border-radius: 16px;
-	border: $refer-border;
+	border: 1px solid $color-border-gray;
 	padding: 64px;
 
 	@include mobile() {
@@ -48,6 +40,10 @@ $color-text-blue: #4eb3e3;
 		flex-direction: column;
 
 		form {
+			margin-top: 64px;
+		}
+
+		.formInputs {
 			position: relative;
 			input {
 				padding: 20px 20px 20px 60px;
@@ -70,7 +66,7 @@ $color-text-blue: #4eb3e3;
 			button {
 				display: block;
 				width: 100%;
-				background-color: $color-bg-blue;
+				background-color: $color-bg-cyan;
 				margin-top: 16px;
 				border: 1px solid $color-border-gray;
 				padding: 16px;

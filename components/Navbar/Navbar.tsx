@@ -1,17 +1,25 @@
+'use client'
+
 import { Noto_Sans } from 'next/font/google'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
 import { MobileMenu } from './MobileMenu/MobileMenu'
 import styles from './navbar.module.scss'
 
 const notoSans = Noto_Sans({ subsets: ['latin'] })
 
 export const Navbar = () => {
+	const [open, setOpen] = useState(true)
+
 	return (
 		<div className={styles.wrapper}>
 			<header className={styles.navbar}>
-				<Image src='/logo.svg' alt='logo' width={125} height={32} />
-				<nav>
+				<div className={styles.menu}>
+					<Image src='/logo.svg' alt='logo' width={125} height={32} />
+					<MobileMenu open={open} setOpen={setOpen} />
+				</div>
+				<nav className={open ? styles.open : styles.close}>
 					<Link href='/' className={notoSans.className}>
 						Chrome Extension
 					</Link>
@@ -22,8 +30,6 @@ export const Navbar = () => {
 						Blog
 					</Link>
 				</nav>
-
-				<MobileMenu />
 			</header>
 		</div>
 	)

@@ -1,0 +1,14 @@
+@import '/app/colors.module.scss';
+@import '/app/mixins.module.scss';
+
+.success {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	margin-bottom: 16px;
+	font-size: 16px;
+
+	@include mobile() {
+		font-size: 16px;
+	}
+}

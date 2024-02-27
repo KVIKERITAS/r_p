@@ -12,4 +12,12 @@
 		background-color: transparent;
 		cursor: pointer;
 	}
+
+	.open {
+		display: flex;
+	}
+
+	.close {
+		display: none;
+	}
 }

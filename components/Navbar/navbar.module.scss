@@ -14,8 +14,28 @@
 	max-width: 1100px;
 	margin: 0 auto;
 
+	.open {
+		display: flex;
+	}
+
+	.close {
+		display: none;
+	}
+
 	@include mobile() {
 		padding: 12px 16px;
+		flex-direction: column;
+		align-items: start;
+		gap: 30px;
+	}
+
+	.menu {
+		@include mobile() {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+		}
 	}
 
 	nav {
@@ -25,7 +45,9 @@
 		margin: 0;
 
 		@include mobile() {
-			display: none;
+			// display: none;
+			display: flex;
+			flex-direction: column;
 		}
 
 		img {
@@ -42,6 +64,10 @@
 
 			&:hover {
 				color: $color-text-cyan;
+			}
+
+			@include mobile() {
+				font-size: 18px;
 			}
 		}
 	}
